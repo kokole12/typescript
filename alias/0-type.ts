@@ -1,7 +1,7 @@
 type User = {
     name: string,
     email: string,
-    isActive: false
+    isActive: boolean
 }
 
 function createUser(user: User): User{
