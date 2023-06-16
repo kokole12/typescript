@@ -5,8 +5,10 @@ abstract class User{
     ){
 
     }
-}
 
+    abstract getCompany(): void
+
+}
 
 class employee extends User{
     constructor(
@@ -15,6 +17,11 @@ class employee extends User{
     ){
         super(name, email)
     }
+
+    getCompany(): void {
+        console.log("Company")
+    }
+
 }
 
 export {};

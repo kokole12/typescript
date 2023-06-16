@@ -30,5 +30,8 @@ var employee = /** @class */ (function (_super) {
         _this.email = email;
         return _this;
     }
+    employee.prototype.getCompany = function () {
+        console.log("Company");
+    };
     return employee;
 }(User));
